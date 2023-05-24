@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import CanditateCard from "./component/CanditateCard";
 
-function VoteByCategory({ dataList, onSelect }) {
+function VoteByCategory({ dataList, onSelect, isVoteSuccess }) {
   const { categoryName, categoryID, data } = dataList;
 
   const [isSelected, setSelected] = useState(null);
@@ -12,6 +12,14 @@ function VoteByCategory({ dataList, onSelect }) {
     setSelected(nomineeID);
     onSelect && onSelect(categoryID, nomineeID, name);
   };
+
+  useEffect(() => {
+    if (isVoteSuccess) {
+      setSelected(null);
+    }
+
+    return () => {};
+  }, [isVoteSuccess]);
 
   return (
     <Wrapper>

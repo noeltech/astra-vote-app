@@ -9,7 +9,13 @@ import { nominees } from "./data/nominees";
 
 function App() {
   const categoryCount = nominees.length;
-  const { submitVote, onVote, submitMessage, clearSubmitMessage } = useVote({
+  const {
+    submitVote,
+    onVote,
+    submitMessage,
+    clearSubmitMessage,
+    isVoteSuccess,
+  } = useVote({
     categoryCount,
   });
 
@@ -17,8 +23,16 @@ function App() {
     <AppWrapper>
       <Header />
       <ContentWrapper>
-        <VoteByCategory dataList={nominees[0]} onSelect={onVote} />
-        <VoteByCategory dataList={nominees[1]} onSelect={onVote} />
+        <VoteByCategory
+          dataList={nominees[0]}
+          onSelect={onVote}
+          isVoteSuccess={isVoteSuccess}
+        />
+        <VoteByCategory
+          dataList={nominees[1]}
+          onSelect={onVote}
+          isVoteSuccess={isVoteSuccess}
+        />
         <SubmitVoteButton onClick={submitVote}>
           Submit Your Votes
         </SubmitVoteButton>

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function useVote({ categoryCount }) {
   const [votes, setVotes] = useState([]);
   const [submitMessage, setSubmitMessage] = useState("");
+  const [isVoteSuccess, setVoteSuccess] = useState(false);
 
   const confirmVote = () => {
     const currentVoteCount = votes.length;
@@ -88,6 +89,7 @@ function useVote({ categoryCount }) {
     if (isValid) {
       // SUBMIT VOTES IF VALID AND COMPLETE
       window.localStorage.setItem("astra-votes", JSON.stringify(votes));
+      setVoteSuccess(true);
     } else {
       // TELL USER TO CHECK VOTES
     }
@@ -99,12 +101,19 @@ function useVote({ categoryCount }) {
   };
 
   //   useEffect(() => {
-  //     return () => {
-  //       setSubmitResult("");
-  //     };
-  //   }, []);
+  //     console.log(isVoteSuccess);
+  //       return () => {
+  //         setSubmitResult("");
+  //       };
+  //   }, [isVoteSuccess]);
 
-  return { submitVote, onVote, submitMessage, clearSubmitMessage };
+  return {
+    submitVote,
+    onVote,
+    submitMessage,
+    clearSubmitMessage,
+    isVoteSuccess,
+  };
 }
 
 export default useVote;
