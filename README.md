@@ -19,9 +19,13 @@ Before starting, ensure that you have the following software installed on your s
 ### Setup Instructions
 
 1. Clone or download the application repository to your local machine.
+
    git clone https://github.com/noeltech/astra-vote-app.git
+
 2. Open a terminal or command prompt and navigate to the project's root directory.
+
    cd astra-vote-app
+
 3. Install the required dependencies by running the following command:
    npm install
 
@@ -47,14 +51,13 @@ This command generates a build folder that contains the minified and optimized v
 2. After the build process completes, you can deploy the build folder to any static file hosting service of your choice. Some popular options include:
 
 Netlify3
+
 Vercel
+
 GitHub Pages
+
 Firebase Hosting
 
 Each hosting service has its own deployment process, so refer to their documentation for detailed instructions on how to deploy a static website.
 
 3. Once your application is deployed, you can access it using the provided URL.
-
-Additional Resources
-Create React App documentation
-styled-components documentation
