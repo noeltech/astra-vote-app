@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Astra Votes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Voting Web Application
 
-## Available Scripts
+## Documentation
 
-In the project directory, you can run:
+1. Added a "New Voter" button in the header for ease of testing
+   -this clear the cache to test a new voter if the voter had already voted as stated
+   in the no. 8 functionalities required document.
 
-### `npm start`
+## How to Setup and Deploy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before starting, ensure that you have the following software installed on your system:
 
-### `npm test`
+1. Node.js: You can download and install Node.js from the official website (https://nodejs.org). It's recommended to use the LTS (Long Term Support) version.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup Instructions
 
-### `npm run build`
+1. Clone or download the application repository to your local machine.
+   git clone https://github.com/noeltech/astra-vote-app.git
+2. Open a terminal or command prompt and navigate to the project's root directory.
+   cd astra-vote-app
+3. Install the required dependencies by running the following command:
+   npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Once the dependencies are installed, start the development server by running the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   This command will start the development server and launch your application in your default browser. Any changes you make to the source code will automatically reload the application.
 
-### `npm run eject`
+5. . You should see your simple web application up and running in the browser. By default, CRA provides a basic starter template with some sample components. Modify the code to suit your requirements.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. Open your preferred text editor or integrated development environment (IDE) to make changes to the code. The entry point for your application is the src/index.js file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Once you're ready to deploy your application and make it accessible to others, you can follow these steps to create a production-ready build and deploy it to a hosting service.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Create an optimized production build of your application by running the following command:
+   npm run build
 
-## Learn More
+This command generates a build folder that contains the minified and optimized version of your application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. After the build process completes, you can deploy the build folder to any static file hosting service of your choice. Some popular options include:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Netlify3
+Vercel
+GitHub Pages
+Firebase Hosting
 
-### Code Splitting
+Each hosting service has its own deployment process, so refer to their documentation for detailed instructions on how to deploy a static website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Once your application is deployed, you can access it using the provided URL.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional Resources
+Create React App documentation
+styled-components documentation

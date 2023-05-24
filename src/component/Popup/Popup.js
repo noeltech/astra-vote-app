@@ -12,7 +12,9 @@ function Popup({ onClose, text, isOpen }) {
         <Wrapper>
           <Content>
             <h3>{text}</h3>
-            <CloseButton onClick={handleOnClose}>Close</CloseButton>
+            <ButtonWrapper>
+              <CloseButton onClick={handleOnClose}>Close</CloseButton>
+            </ButtonWrapper>
           </Content>
         </Wrapper>
       ) : null}
@@ -35,9 +37,9 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   position: absolute;
-  left: 30%;
-  right: 30%;
-  bottom: 50%;
+  left: 20%;
+  right: 20%;
+  bottom: 40%;
   top: 30%;
   text-align: center;
   margin: auto;
@@ -45,6 +47,7 @@ const Content = styled.div`
   border-color: black;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4rem 2rem;
 `;
 
 const CloseButton = styled.button`
@@ -52,4 +55,12 @@ const CloseButton = styled.button`
   margin: auto;
   position: absolute;
   bottom: 2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #e6c635;
+  cursor: pointer;
 `;
+
+const ButtonWrapper = styled.div``;
