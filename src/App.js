@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./component/Header/Header";
 import Popup from "./component/Popup/Popup";
 import VoteByCategory from "./component/VoteByCategory/VoteByCategory";
